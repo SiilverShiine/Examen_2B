@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFieldsGenre">
+
+    <EditText
+        android:id="@+id/et_band_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Band's name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_creation_year"
+        app:layout_constraintEnd_toEndOf="@+id/et_creation_year"
+        app:layout_constraintStart_toStartOf="@+id/et_creation_year" />
+
+    <Spinner
+        android:id="@+id/sp_analogical_instruments"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="Analogical instruments"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel_band"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save_band"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancel_band" />
+
+    <EditText
+        android:id="@+id/et_creation_year"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Creation year"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/sp_genre"
+        app:layout_constraintEnd_toEndOf="@+id/sp_genre"
+        app:layout_constraintStart_toStartOf="@+id/sp_genre" />
+
+    <Spinner
+        android:id="@+id/sp_genre"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="genres options"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_type_of_band"
+        app:layout_constraintEnd_toEndOf="@+id/et_type_of_band"
+        app:layout_constraintStart_toStartOf="@+id/et_type_of_band" />
+
+    <EditText
+        android:id="@+id/et_type_of_band"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Type of band"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/sp_analogical_instruments"
+        app:layout_constraintEnd_toEndOf="@+id/sp_analogical_instruments"
+        app:layout_constraintStart_toStartOf="@+id/sp_analogical_instruments" />
+
+    <Button
+        android:id="@+id/btn_cancel_band"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save_band"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

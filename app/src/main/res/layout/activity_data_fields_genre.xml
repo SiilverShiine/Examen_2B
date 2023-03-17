@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFieldsGenre">
+
+    <EditText
+        android:id="@+id/et_genre_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Genre's name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_start_period"
+        app:layout_constraintEnd_toEndOf="@+id/et_start_period"
+        app:layout_constraintStart_toStartOf="@+id/et_start_period" />
+
+    <EditText
+        android:id="@+id/et_bpm_average"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="BPM average"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel_band"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save_genre"
+        app:layout_constraintStart_toStartOf="@+id/btn_cancel_band" />
+
+    <EditText
+        android:id="@+id/et_start_period"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Start period"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_start_country"
+        app:layout_constraintEnd_toEndOf="@+id/et_start_country"
+        app:layout_constraintStart_toStartOf="@+id/et_start_country" />
+
+    <EditText
+        android:id="@+id/et_start_country"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Start country"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_signature"
+        app:layout_constraintEnd_toEndOf="@+id/et_signature"
+        app:layout_constraintStart_toStartOf="@+id/et_signature" />
+
+    <EditText
+        android:id="@+id/et_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Signature"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_bpm_average"
+        app:layout_constraintEnd_toEndOf="@+id/et_bpm_average"
+        app:layout_constraintStart_toStartOf="@+id/et_bpm_average" />
+
+    <Button
+        android:id="@+id/btn_cancel_band"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save_genre"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
